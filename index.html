@@ -4,9 +4,210 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta property="og:title" content="Rebuilding Yuka" />
+    <meta property="og:description" content="My Integration of Yuka's website" />
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FYuka_(application)&psig=AOvVaw2gAvrbfVlIpoXJBUNkq-5J&ust=1596638361269000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIimjsXjgesCFQAAAAAdAAAAABAD" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <title>Rebuilding Yuka</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <div class="header-nav">
+          <a href="#" class="header-nav__logo"><img src="./images/yuka-logo.svg" alt="yuka logo" /></a>
+          <div class="header-nav__menu-burger">
+            <span>Menu</span>
+            <div class="menu-burger__btn"></div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-item">Application</a></li>
+            <li><a href="#" class="nav-item">Equipe</a></li>
+            <li><a href="#" class="nav-item">Indépendance</a></li>
+            <li><a href="#" class="nav-item">Blog</a></li>
+          </ul>
+          <div class="btn">Téléchargez l'app</div>
+        </nav>
+      </header>
+      <div class="hero">
+        <div class="hero__content">
+          <h1>Faites les bons choix pour votre santé</h1>
+          <p>Yuka décrypte les étiquettes de vos produits alimentaires et cosmétiques et analyse leur impact sur la santé.</p>
+          <div class="hero-content__download-btn"><img src="./images/app_store_fr.svg" alt="app store" /></div>
+          <div class="hero-content__download-btn"><img src="./images/google_play_fr.svg" alt="google play" /></div>
+        </div>
+        <div class="hero__illustration">
+          <div>
+            <img src="./images/nuage_1.svg" alt="illustration background" />
+          </div>
+          <div><img src="./images/objets.svg" alt="objects" /></div>
+          <div><img src="./images/tel.png" alt="telephone" /></div>
+          <div><img src="./images/carotte.svg" alt="carrot" /></div>
+        </div>
+      </div>
+      <section class="values">
+        <h2>Un projet 100% indépendant</h2>
+        <div class="value">
+          <div class="value__title">
+            <div class="value__image">
+              <img src="./images/bulle_influence.svg" alt="no influence" />
+            </div>
+            <h3>Aucune influence des marques</h3>
+          </div>
+          <p>Aucune marque ni groupe industriel ne peut influencer la notation et les recommandations proposées.</p>
+        </div>
+        <div class="value">
+          <div class="value__title">
+            <h3>Pas de publicité</h3>
+            <div class="value__image">
+              <img src="./images/bulle_pub.svg" alt="no ads" />
+            </div>
+          </div>
+          <p>Aucune marque ne peut rémunérer Yuka pour faire la promotion de ses produits dans l’application.</p>
+        </div>
+        <div class="value">
+          <div class="value__title">
+            <div class="value__image">
+              <img src="./images/bulle_financement.svg" alt="healthy funding" />
+            </div>
+            <h3>Aucune influence des marques</h3>
+          </div>
+          <p>Yuka a développé 3 moyens de financement responsables garantissant qu'aucun conflit d'intérêts ne puisse affecter l'objectivité des analyses.</p>
+        </div>
+        <div class="btn">En savoir +</div>
+      </section>
+      <section class="quality quality-nutrition">
+        <h2>Évaluez la qualité de vos produits <span>alimentaires</span></h2>
+        <div class="quality__illustration">
+          <div>
+            <img src="./images/madeleines_st_michel.png" alt="st michel madeleines" />
+          </div>
+          <div class="quality__illustration__items">
+            <div class="quality__illustration__items__item">5 additifs</div>
+            <div class="quality__illustration__item__item">Trop sucré</div>
+            <div class="quality__illustration__item__item">Trop calorique</div>
+          </div>
+          <div class="quality__illustration__review">
+            <span class="red"></span>
+            Mauvais - 5/100
+          </div>
+        </div>
+        <p>Savez-vous vraiment ce que vous achetez ? Nous oui ! En un clin d’oeil, Yuka scanne et déchiffre pour vous les étiquettes : vous visualisez les produits qui sont bons et ceux qu’il vaut mieux éviter.</p>
+      </section>
+      <section class="quality quality-cosmetic">
+        <h2>Ainsi que la qualité de vos produits <span>cosmétiques !</span></h2>
+        <div class="quality__illustration">
+          <div class="quality__illustration__items">
+            <div class="quality__illustration__items__item">1 Pertubateur endocrinien</div>
+            <div class="quality__illustration__item__item">3 Irritants</div>
+            <div class="quality__illustration__item__item">8 allergènes</div>
+          </div>
+          <div>
+            <img src="./images/shampoing_garnier.png" alt="garnier shampoo" />
+          </div>
+          <div class="quality__illustration__review">
+            <span class="orange"></span>
+            Médiocre - 27/100
+          </div>
+        </div>
+        <p>erturbateurs endocriniens, cancérigènes, allergènes ou encore irritants : les ingrédients des cosmétiques cachent aussi bien des surprises. Avec Yuka, découvrez l’impact sur la santé de tous les produits de votre salle de bain.</p>
+      </section>
+      <div class="btn">Découvrir</div>
+      <section class="recommandations">
+        <h2>Obtenez des recommandations de meilleurs produits</h2>
+        <div class="slider">
+          <div class="slider-content">
+            <div class="recommandations__recommandation">
+              <div class="recommandations__recommandation__product">
+                <div class="recommandations__recommandation__product__image">
+                  <img src="./images/grany-noisettes.png" alt="grany biscuits" />
+                </div>
+                <div class="recommandations__recommandation__product__content">
+                  <p>Barre noisette</p>
+                  <span><span class="red"></span>Mauvais</span>
+                </div>
+                <div class="recommandations__recommandation__product__check"><i class="fa fa-times red"></i></div>
+                <div class="recommandations__recommandation__product__shadow">
+                  <img src="./images/product-shadow.svg" alt="product shadow" />
+                </div>
+              </div>
+              <div class="recommandations_recommandation__arrow"><i class="fa fa-arrow-right"></i></div>
+              <div class="recommandations__recommandation__product">
+                <div class="recommandations__recommandation__product__image">
+                  <img src="./images/naturalia-barre-cereales.png" alt="naturalia cereal bars" />
+                </div>
+                <div class="recommandations__recommandation__product__content">
+                  <p>Barre céréales</p>
+                  <span><span class="green"></span>Bon</span>
+                </div>
+                <div class="recommandations__recommandation__product__check"><i class="fa fa-check green"></i></div>
+                <div class="recommandations__recommandation__product__shadow">
+                  <img src="./images/product-shadow.svg" alt="product shadow" />
+                </div>
+              </div>
+            </div>
+            <div class="recommandations__recommandation">
+              <div class="recommandations__recommandation__product">
+                <div class="recommandations__recommandation__product__image">
+                  <img src="./images/dove-creme-douche.png" alt="dove bath" />
+                </div>
+                <div class="recommandations__recommandation__product__content">
+                  <p>Crème de douche</p>
+                  <span><span class="red"></span>Mauvais</span>
+                </div>
+                <div class="recommandations__recommandation__product__check"><i class="fa fa-times red"></i></div>
+                <div class="recommandations__recommandation__product__shadow">
+                  <img src="./images/product-shadow.svg" alt="product shadow" />
+                </div>
+              </div>
+              <div class="recommandations_recommandation__arrow"><i class="fa fa-arrow-right"></i></div>
+              <div class="recommandations__recommandation__product">
+                <div class="recommandations__recommandation__product__image">
+                  <img src="./images/sanex-gel-douche.png" alt="sanex bath" />
+                </div>
+                <div class="recommandations__recommandation__product__content">
+                  <p>Gel douche</p>
+                  <span><span class="green"></span>Bon</span>
+                </div>
+                <div class="recommandations__recommandation__product__check"><i class="fa fa-check green"></i></div>
+                <div class="recommandations__recommandation__product__shadow">
+                  <img src="./images/product-shadow.svg" alt="product shadow" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__indicator">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <h2>Rejoignez les</h2>
+        <br />
+        <div class="join__number-users">
+          <div class="join__number-users__number">1</div>
+          <div class="join__number-users__number">8</div>
+          <div class="join__number-users__number">6</div>
+          <div class="join__number-users__number">3</div>
+          <div class="join__number-users__number">6</div>
+          <div class="join__number-users__number">1</div>
+          <div class="join__number-users__number">4</div>
+          <div class="join__number-users__number">1</div>
+        </div>
+        <h2>utilisateurs</h2>
+        <div class="stars">
+          <div class="star"><img src="./images/full-star.svg" alt="full star" /></div>
+          <div class="star"><img src="./images/full-star.svg" alt="full star" /></div>
+          <div class="star"><img src="./images/full-star.svg" alt="full star" /></div>
+          <div class="star"><img src="./images/full-star.svg" alt="full star" /></div>
+          <div class="star"><img src="./images/half-star.svg" alt="half star" /></div>
+        </div>
+        <div class="notes">4,5/5 <i class="fa fa-circle"></i>300 000 avis</div>
+      </section>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
