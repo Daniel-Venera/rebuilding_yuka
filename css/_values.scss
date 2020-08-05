@@ -1,0 +1,29 @@
+.values {
+  padding-bottom: 30px;
+  &__value {
+    padding: 30px 15px 0px;
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10px;
+      img {
+        max-width: 120px;
+      }
+    }
+    .right {
+      padding-left: 30px;
+    }
+    .left {
+      padding-right: 30px;
+    }
+  }
+  &__btn-center {
+    margin-top: 30px;
+    text-align: center;
+    &__btn {
+      font-size: 18px !important;
+      padding: 10px 10px !important;
+    }
+  }
+}

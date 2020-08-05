@@ -1,11 +1,22 @@
 @import "config";
 @import "header";
 @import "hero";
+@import "values";
 
 body {
   color: $black;
   font-family: "Open Sans";
   overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-family: "Pacifico";
 }
 .container {
   max-width: 1200px;

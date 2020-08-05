@@ -218,10 +218,63 @@ header .navbar .btn {
   width: 100%;
 }
 
+.values {
+  padding-bottom: 30px;
+}
+
+.values__value {
+  padding: 30px 15px 0px;
+}
+
+.values__value__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
+.values__value__title img {
+  max-width: 120px;
+}
+
+.values__value .right {
+  padding-left: 30px;
+}
+
+.values__value .left {
+  padding-right: 30px;
+}
+
+.values__btn-center {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.values__btn-center__btn {
+  font-size: 18px !important;
+  padding: 10px 10px !important;
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
   overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-family: "Pacifico";
 }
 
 .container {
