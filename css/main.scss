@@ -1,1 +1,30 @@
 @import "config";
+@import "header";
+
+body {
+  color: $black;
+  font-family: "Open Sans";
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 15px;
+  background-color: $green;
+  border: 2px solid $green;
+  display: inline-block;
+  border-radius: 8px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: white;
+    color: $green;
+  }
+}
