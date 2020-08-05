@@ -139,6 +139,10 @@ header .navbar .btn {
   margin-top: 100px;
 }
 
+.hero__content {
+  margin-bottom: 100px;
+}
+
 .hero__content h1 {
   font-size: 28px;
   line-height: 35px;
@@ -169,11 +173,55 @@ header .navbar .btn {
   display: inline-block;
   border-radius: 5px;
   margin: 0px 5px;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.hero__content__downloads__download:hover {
+  background-color: #00db5f;
+}
+
+.hero__illustrations {
+  position: relative;
+  height: 400px;
+}
+
+.hero__illustrations__illustration {
+  position: absolute;
+}
+
+.hero__illustrations__illustration__bg {
+  width: 512px;
+  right: -300px;
+  top: 0;
+}
+
+.hero__illustrations__illustration__objects {
+  width: 312px;
+  top: -30px;
+  right: 30px;
+}
+
+.hero__illustrations__illustration__telephone {
+  width: 150px;
+  top: -30px;
+  right: 100px;
+}
+
+.hero__illustrations__illustration__carrot {
+  width: 95px;
+  top: 100px;
+  right: 15px;
+}
+
+.hero__illustrations img {
+  width: 100%;
 }
 
 body {
   color: #302c2e;
   font-family: "Open Sans";
+  overflow-x: hidden;
 }
 
 .container {

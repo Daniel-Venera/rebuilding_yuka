@@ -1,6 +1,7 @@
 .hero {
   margin-top: 100px;
   &__content {
+    margin-bottom: 100px;
     h1 {
       font-size: 28px;
       line-height: 35px;
@@ -23,7 +24,42 @@
         display: inline-block;
         border-radius: 5px;
         margin: 0px 5px;
+        transition: $transition;
+        &:hover {
+          background-color: $green;
+        }
       }
+    }
+  }
+  &__illustrations {
+    position: relative;
+    height: 400px;
+    &__illustration {
+      position: absolute;
+      &__bg {
+        width: 512px;
+        right: -300px;
+        top: 0;
+      }
+      &__objects {
+        width: 312px;
+        top: -30px;
+        right: 30px;
+      }
+      &__telephone {
+        width: 150px;
+        top: -30px;
+        right: 100px;
+      }
+      &__carrot {
+        width: 95px;
+        top: 100px;
+        right: 15px;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
