@@ -1,3 +1,29 @@
 .hero {
   margin-top: 100px;
+  &__content {
+    h1 {
+      font-size: 28px;
+      line-height: 35px;
+      font-family: "Poppins";
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      font-family: "Open Sans";
+      font-weight: 400;
+      margin: 20px 0px;
+    }
+    &__downloads {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      &__download {
+        background-color: black;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 0px 5px;
+      }
+    }
+  }
 }
