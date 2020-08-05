@@ -1,4 +1,9 @@
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
   .header-nav {
     padding: 15px 0px 10px;
@@ -14,6 +19,7 @@ header {
     &__menu-burger {
       display: flex;
       align-items: center;
+      height: 20px;
       span {
         padding-right: 10px;
         text-transform: uppercase;
@@ -22,30 +28,52 @@ header {
         color: black;
       }
       &__btn {
-        height: 2px;
+        height: 100%;
         width: 20px;
-        background-color: $black;
         position: relative;
+        cursor: pointer;
+        div {
+          width: 100%;
+          border: 1px solid $black;
+          top: 8px;
+          position: absolute;
+          transition: all 0.3s ease;
+        }
         &::before {
           content: "";
-          @extend .header-nav__menu-burger__btn;
+          width: 100%;
+          border: 1px solid $black;
+          top: 2px;
           position: absolute;
-          top: -6px;
+          transition: all 0.3s ease;
         }
         &::after {
           @extend .header-nav__menu-burger__btn::before;
-          top: 6px;
+          top: 14px;
+        }
+      }
+      .open {
+        div {
+          opacity: 0;
+        }
+        &::before {
+          transform: rotate(45deg);
+          top: 8px;
+        }
+        &::after {
+          transform: rotate(-45deg);
+          top: 8px;
         }
       }
     }
   }
-  nav {
-    // height: 0px;
+  .navbar {
+    max-height: 0px;
     overflow: hidden;
     text-align: center;
-
     ul {
       padding-bottom: 20px;
+
       li {
         a {
           text-decoration: none;
@@ -60,6 +88,9 @@ header {
           }
         }
       }
+    }
+    &.open {
+      max-height: 100%;
     }
     .btn {
       margin-bottom: 20px;

@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -7,6 +9,11 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  background-color: white;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
 }
@@ -39,6 +46,7 @@ header .header-nav__menu-burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 20px;
 }
 
 header .header-nav__menu-burger span {
@@ -49,33 +57,63 @@ header .header-nav__menu-burger span {
   color: black;
 }
 
-header .header-nav__menu-burger__btn, header .header-nav__menu-burger__btn::before, header .header-nav__menu-burger__btn::after {
-  height: 2px;
+header .header-nav__menu-burger__btn {
+  height: 100%;
   width: 20px;
-  background-color: #302c2e;
   position: relative;
+  cursor: pointer;
+}
+
+header .header-nav__menu-burger__btn div {
+  width: 100%;
+  border: 1px solid #302c2e;
+  top: 8px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header .header-nav__menu-burger__btn::before, header .header-nav__menu-burger__btn::after {
   content: "";
+  width: 100%;
+  border: 1px solid #302c2e;
+  top: 2px;
   position: absolute;
-  top: -6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header .header-nav__menu-burger__btn::after {
-  top: 6px;
+  top: 14px;
 }
 
-header nav {
+header .header-nav__menu-burger .open div {
+  opacity: 0;
+}
+
+header .header-nav__menu-burger .open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 8px;
+}
+
+header .header-nav__menu-burger .open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 8px;
+}
+
+header .navbar {
+  max-height: 0px;
   overflow: hidden;
   text-align: center;
 }
 
-header nav ul {
+header .navbar ul {
   padding-bottom: 20px;
 }
 
-header nav ul li a {
+header .navbar ul li a {
   text-decoration: none;
   color: #302c2e;
   font-weight: 600;
@@ -86,12 +124,20 @@ header nav ul li a {
   transition: all 0.15s ease;
 }
 
-header nav ul li a:hover {
+header .navbar ul li a:hover {
   color: #00db5f;
 }
 
-header nav .btn {
+header .navbar.open {
+  max-height: 100%;
+}
+
+header .navbar .btn {
   margin-bottom: 20px;
+}
+
+.hero {
+  margin-top: 100px;
 }
 
 body {

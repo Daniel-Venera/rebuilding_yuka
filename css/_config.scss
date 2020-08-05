@@ -4,7 +4,9 @@ $orange: #ff8939;
 $black: #302c2e;
 $transition: all 0.15s ease;
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
