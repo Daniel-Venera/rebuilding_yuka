@@ -2,7 +2,7 @@ let log = console.log;
 
 let burger = document.querySelector(".header-nav__menu-burger__btn");
 let nav = document.querySelector(".navbar");
-let recommandationIndicators = document.querySelectorAll(".recommandations__slider__indicator__item");
+let recommandationIndicators = document.querySelectorAll(".recommandations__slider__indicators__indicator");
 let recommandationPreviousBtn = document.querySelector(".recommandations__slider__indicator__previous");
 let recommandationNextBtn = document.querySelector(".recommandations__slider__indicator__next");
 let recommandationSlider = document.querySelector(".recommandations__slider__slider-content");
@@ -21,7 +21,7 @@ recommandationIndicators.forEach(function (e) {
 });
 
 var recommandationSliderInterval = setInterval(() => {
-  if (!recommandationNextBtn.classList.contains("recommandations__slider__indicator__item--full")) {
+  if (!recommandationNextBtn.classList.contains("recommandations__slider__indicators__indicator--full")) {
     recommandationCarousel(recommandationNextBtn);
   } else {
     recommandationCarousel(recommandationPreviousBtn);
@@ -31,10 +31,10 @@ var recommandationSliderInterval = setInterval(() => {
 function recommandationCarousel(e) {
   if (e == recommandationNextBtn) {
     recommandationSlider.style.transform = "translateX(-50%)";
-    recommandationPreviousBtn.classList.remove("recommandations__slider__indicator__item--full");
+    recommandationPreviousBtn.classList.remove("recommandations__slider__indicators__indicator--full");
   } else {
     recommandationSlider.style.transform = "translateX(0)";
-    recommandationNextBtn.classList.remove("recommandations__slider__indicator__item--full");
+    recommandationNextBtn.classList.remove("recommandations__slider__indicators__indicator--full");
   }
-  e.classList.add("recommandations__slider__indicator__item--full");
+  e.classList.add("recommandations__slider__indicators__indicator--full");
 }

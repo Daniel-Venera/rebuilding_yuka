@@ -64,15 +64,20 @@
     text-align: center;
   }
   &__slider {
+    position: relative;
     margin: 100px 0px 0px;
     &__slider-content {
+      width: 300%;
+      display: flex;
       &__item {
+        width: 33%;
         background-color: white;
         position: relative;
         border-radius: 8px;
         text-align: center;
         padding: 70px 10px 10px;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+        margin: 0 20px;
         &__image {
           position: absolute;
           top: 0;
@@ -106,6 +111,10 @@
             display: inline-block;
             margin: 0 0 5px;
           }
+          .emoji {
+            width: 14px;
+            margin: 0;
+          }
         }
         &__name {
           font-family: "Pacifico";
@@ -114,6 +123,63 @@
           margin: 10px 0 0;
         }
       }
+    }
+
+    &__plante-1,
+    &__plante-2,
+    &__plante-3,
+    &__nuage-beige-1,
+    &__nuage-beige-2,
+    &__nuage-beige-3,
+    &__nuage-beige-4 {
+      position: absolute;
+    }
+
+    &__plante-1,
+    &__plante-3 {
+      display: none;
+    }
+
+    &__plante-2 {
+      width: 75px;
+      right: 60px;
+      bottom: -30px;
+    }
+    &__nuage-beige-1,
+    &__nuage-beige-2,
+    &__nuage-beige-3,
+    &__nuage-beige-4 {
+      z-index: -1;
+    }
+    &__nuage-beige-2,
+    &__nuage-beige-3,
+    &__nuage-beige-4 {
+      width: 120px;
+    }
+    &__nuage-beige-1 {
+      bottom: -40px;
+    }
+    &__nuage-beige-2 {
+      top: -50px;
+    }
+
+    &__nuage-beige-3 {
+      top: -150px;
+      left: 150px;
+    }
+    &__nuage-beige-4 {
+      top: -100px;
+      left: 300px;
+    }
+  }
+  &__slider-indicators {
+    @extend .recommandations__slider__indicators;
+    margin-top: 40px;
+    &__indicator {
+      @extend .recommandations__slider__indicators__indicator;
+    }
+    &__indicator--full {
+      @extend .recommandations__slider__indicators__indicator--full;
     }
   }
 }

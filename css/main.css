@@ -490,7 +490,7 @@ header .navbar .btn {
   display: none;
 }
 
-.recommandations__slider__indicator {
+.recommandations__slider__indicators, .reviews__slider-indicators {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,7 +500,7 @@ header .navbar .btn {
           justify-content: center;
 }
 
-.recommandations__slider__indicator__item {
+.recommandations__slider__indicators__indicator, .reviews__slider-indicators__indicator {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -509,7 +509,7 @@ header .navbar .btn {
   cursor: pointer;
 }
 
-.recommandations__slider__indicator__item--full {
+.recommandations__slider__indicators__indicator--full, .reviews__slider-indicators__indicator--full {
   background-color: #ecebe5;
 }
 
@@ -601,10 +601,19 @@ header .navbar .btn {
 }
 
 .reviews__slider {
+  position: relative;
   margin: 100px 0px 0px;
 }
 
+.reviews__slider__slider-content {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .reviews__slider__slider-content__item {
+  width: 33%;
   background-color: white;
   position: relative;
   border-radius: 8px;
@@ -612,6 +621,7 @@ header .navbar .btn {
   padding: 70px 10px 10px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+  margin: 0 20px;
 }
 
 .reviews__slider__slider-content__item__image {
@@ -654,6 +664,11 @@ header .navbar .btn {
   margin: 0 0 5px;
 }
 
+.reviews__slider__slider-content__item__text .emoji {
+  width: 14px;
+  margin: 0;
+}
+
 .reviews__slider__slider-content__item__name {
   font-family: "Pacifico";
   color: #00db5f;
@@ -661,10 +676,53 @@ header .navbar .btn {
   margin: 10px 0 0;
 }
 
+.reviews__slider__plante-1, .reviews__slider__plante-2, .reviews__slider__plante-3, .reviews__slider__nuage-beige-1, .reviews__slider__nuage-beige-2, .reviews__slider__nuage-beige-3, .reviews__slider__nuage-beige-4 {
+  position: absolute;
+}
+
+.reviews__slider__plante-1, .reviews__slider__plante-3 {
+  display: none;
+}
+
+.reviews__slider__plante-2 {
+  width: 75px;
+  right: 60px;
+  bottom: -30px;
+}
+
+.reviews__slider__nuage-beige-1, .reviews__slider__nuage-beige-2, .reviews__slider__nuage-beige-3, .reviews__slider__nuage-beige-4 {
+  z-index: -1;
+}
+
+.reviews__slider__nuage-beige-2, .reviews__slider__nuage-beige-3, .reviews__slider__nuage-beige-4 {
+  width: 120px;
+}
+
+.reviews__slider__nuage-beige-1 {
+  bottom: -40px;
+}
+
+.reviews__slider__nuage-beige-2 {
+  top: -50px;
+}
+
+.reviews__slider__nuage-beige-3 {
+  top: -150px;
+  left: 150px;
+}
+
+.reviews__slider__nuage-beige-4 {
+  top: -100px;
+  left: 300px;
+}
+
+.reviews__slider-indicators {
+  margin-top: 40px;
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
-  overflow-x: hidden;
 }
 
 h2 {
