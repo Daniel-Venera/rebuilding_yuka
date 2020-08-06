@@ -9,6 +9,7 @@ let recommandationSlider = document.querySelector(".recommandations__slider__sli
 let recommandationIndicatorsActive = recommandationNextBtn;
 let reviewsIndicators = document.querySelectorAll(".reviews__slider-indicators__indicator");
 let reviewsSlider = document.querySelector(".reviews__slider__slider-content");
+
 burger.addEventListener("click", function () {
   nav.classList.toggle("open");
   burger.classList.toggle("open");
@@ -43,6 +44,7 @@ function recommandationCarousel(e) {
 reviewsIndicators.forEach(function (e) {
   e.addEventListener("click", function () {
     reviewsCarousel(e);
+    clearInterval(reviewsSliderInterval);
   });
 });
 
@@ -62,6 +64,11 @@ function reviewsCarousel(e) {
   e.classList.add("reviews__slider-indicators__indicator--full");
 }
 
-// var reviewsSliderInterval = setInterval(() => {
-
-// }, 4000);
+var reviewsSliderInterval = setInterval(() => {
+  var reviewActive = document.querySelector(".reviews__slider-indicators__indicator--full");
+  if (Array.from(reviewsIndicators).indexOf(reviewActive) == reviewsIndicators.length - 1) {
+    reviewsCarousel(reviewsIndicators[0]);
+  } else {
+    reviewsCarousel(reviewsIndicators[Array.from(reviewsIndicators).indexOf(reviewActive) + 1]);
+  }
+}, 4000);
