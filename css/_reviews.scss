@@ -63,4 +63,57 @@
     font-family: "Poppins";
     text-align: center;
   }
+  &__slider {
+    margin: 100px 0px 0px;
+    &__slider-content {
+      &__item {
+        background-color: white;
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        padding: 70px 10px 10px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+        &__image {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100px;
+          height: 100px;
+          margin: auto;
+          border: 10px solid white;
+          box-sizing: content-box;
+          border-radius: 50%;
+          img {
+            width: 100%;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          z-index: -2;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+          margin: auto;
+        }
+        &__text {
+          img {
+            display: inline-block;
+            margin: 0 0 5px;
+          }
+        }
+        &__name {
+          font-family: "Pacifico";
+          color: $green;
+          display: inline-block;
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
 }

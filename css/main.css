@@ -600,6 +600,67 @@ header .navbar .btn {
   text-align: center;
 }
 
+.reviews__slider {
+  margin: 100px 0px 0px;
+}
+
+.reviews__slider__slider-content__item {
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+  padding: 70px 10px 10px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+}
+
+.reviews__slider__slider-content__item__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 10px solid white;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+}
+
+.reviews__slider__slider-content__item__image img {
+  width: 100%;
+}
+
+.reviews__slider__slider-content__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: -2;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
+  margin: auto;
+}
+
+.reviews__slider__slider-content__item__text img {
+  display: inline-block;
+  margin: 0 0 5px;
+}
+
+.reviews__slider__slider-content__item__name {
+  font-family: "Pacifico";
+  color: #00db5f;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
