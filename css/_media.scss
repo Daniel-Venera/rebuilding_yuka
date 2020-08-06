@@ -1,0 +1,13 @@
+.media__images {
+  display: flex;
+  // align-items: center;
+
+  &__image {
+    width: 130px;
+    background-position-y: bottom;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -722,6 +722,21 @@ header .navbar .btn {
   margin-top: 40px;
 }
 
+.media__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media__images__image {
+  width: 130px;
+  background-position-y: bottom;
+}
+
+.media__images__image img {
+  width: 100%;
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
