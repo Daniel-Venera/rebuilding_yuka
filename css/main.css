@@ -606,6 +606,8 @@ header .navbar .btn {
 }
 
 .reviews__slider__slider-content {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 300%;
   display: -webkit-box;
   display: -ms-flexbox;

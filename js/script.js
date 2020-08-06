@@ -7,7 +7,8 @@ let recommandationPreviousBtn = document.querySelector(".recommandations__slider
 let recommandationNextBtn = document.querySelector(".recommandations__slider__indicator__next");
 let recommandationSlider = document.querySelector(".recommandations__slider__slider-content");
 let recommandationIndicatorsActive = recommandationNextBtn;
-
+let reviewsIndicators = document.querySelectorAll(".reviews__slider-indicators__indicator");
+let reviewsSlider = document.querySelector(".reviews__slider__slider-content");
 burger.addEventListener("click", function () {
   nav.classList.toggle("open");
   burger.classList.toggle("open");
@@ -38,3 +39,29 @@ function recommandationCarousel(e) {
   }
   e.classList.add("recommandations__slider__indicators__indicator--full");
 }
+
+reviewsIndicators.forEach(function (e) {
+  e.addEventListener("click", function () {
+    reviewsCarousel(e);
+  });
+});
+
+function reviewsCarousel(e) {
+  reviewsIndicators.forEach(function (f) {
+    if (f.classList.contains("reviews__slider-indicators__indicator--full")) {
+      f.classList.remove("reviews__slider-indicators__indicator--full");
+    }
+  });
+  if (e.id == "reviewsIndicator1") {
+    reviewsSlider.style.transform = "translateX(0)";
+  } else if (e.id == "reviewsIndicator2") {
+    reviewsSlider.style.transform = "translateX(-33%)";
+  } else {
+    reviewsSlider.style.transform = "translateX(-66.6%)";
+  }
+  e.classList.add("reviews__slider-indicators__indicator--full");
+}
+
+// var reviewsSliderInterval = setInterval(() => {
+
+// }, 4000);

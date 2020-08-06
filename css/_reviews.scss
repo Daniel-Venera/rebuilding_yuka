@@ -67,6 +67,7 @@
     position: relative;
     margin: 100px 0px 0px;
     &__slider-content {
+      transition: all 0.5s ease;
       width: 300%;
       display: flex;
       &__item {
