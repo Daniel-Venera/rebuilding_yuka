@@ -1,0 +1,96 @@
+.recommandations {
+  font-family: "Poppins";
+  &__slider {
+    &__slider-content {
+      width: 200%;
+      margin-top: 20px;
+      display: flex;
+      transition: all 0.5s ease;
+      &__recommandation {
+        background-color: $lightBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0px 30px;
+        padding: 20px 0px;
+        border-radius: 8px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.28);
+        &__product {
+          margin: 0px 5px;
+          padding: 10px;
+          position: relative;
+          background-color: white;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 100px;
+          &__image {
+            width: 73px;
+            img {
+              width: 100%;
+            }
+          }
+          &__image--cosmetic {
+            width: 45px;
+          }
+          &__content {
+            font-size: 12px;
+            color: $grey;
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+            }
+          }
+          &__check {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+          }
+
+          &:first-child {
+            transform: rotate(-5deg);
+          }
+          &:nth-child(3) {
+            transform: rotate(5deg);
+          }
+          &__shadow {
+            position: absolute;
+            bottom: -20px;
+            width: 82px;
+            img {
+              width: 100%;
+            }
+          }
+          &__shadow--bad {
+            rotate: (5deg);
+          }
+          &__shadow--good {
+            rotate: (-5deg);
+          }
+        }
+        &__arrow {
+          display: none;
+        }
+      }
+    }
+    &__indicator {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      &__item {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 3px solid $lightGrey;
+        margin: 0px 5px;
+        cursor: pointer;
+      }
+      &__item--full {
+        background-color: $lightGrey;
+      }
+    }
+  }
+}
