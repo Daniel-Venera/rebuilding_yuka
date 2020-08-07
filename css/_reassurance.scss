@@ -1,10 +1,14 @@
 .reassurance {
+  margin: 30px 0 0;
   background-color: $lightBlue;
+  .container {
+    padding: 0 40px;
+  }
   &__images-row {
     display: flex;
     justify-content: center;
     &__image {
-      width: 80px;
+      width: 60px;
       img {
         width: 100%;
       }
@@ -14,6 +18,7 @@
     }
   }
   h2 {
+    margin: 20px 0 0;
     span {
       font-family: "Pacifico";
       color: $green;

@@ -2,6 +2,7 @@
   &__number-users {
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     &__number {
       position: relative;
       overflow: hidden;
@@ -62,6 +63,9 @@
     font-size: 25px;
     font-family: "Poppins";
     text-align: center;
+    i {
+      font-size: 10px;
+    }
   }
   &__slider {
     position: relative;
@@ -108,6 +112,7 @@
           margin: auto;
         }
         &__text {
+          padding: 0 20px;
           img {
             display: inline-block;
             margin: 0 0 5px;

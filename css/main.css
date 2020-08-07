@@ -168,8 +168,11 @@ header .navbar .btn {
           justify-content: center;
 }
 
-.hero__content__downloads__download, footer .download-btns .download-btn {
+.hero__content__downloads__download img, footer .download-btns .download-btn img {
+  width: 140px;
   background-color: black;
+  border-radius: 8px;
+  padding: 0 3px;
   display: inline-block;
   border-radius: 5px;
   margin: 0px 5px;
@@ -177,7 +180,7 @@ header .navbar .btn {
   transition: all 0.15s ease;
 }
 
-.hero__content__downloads__download:hover, footer .download-btns .download-btn:hover {
+.hero__content__downloads__download img:hover, footer .download-btns .download-btn img:hover {
   background-color: #00db5f;
 }
 
@@ -221,6 +224,7 @@ header .navbar .btn {
 
 .values__value {
   padding: 30px 15px 0px;
+  margin: 0 30px;
 }
 
 .values__value__title {
@@ -234,6 +238,7 @@ header .navbar .btn {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 10px;
+  font-size: 18px;
 }
 
 .values__value__title img {
@@ -520,6 +525,8 @@ header .navbar .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .reviews__number-users__number {
@@ -600,6 +607,10 @@ header .navbar .btn {
   text-align: center;
 }
 
+.reviews__notes i {
+  font-size: 10px;
+}
+
 .reviews__slider {
   position: relative;
   margin: 100px 0px 0px;
@@ -659,6 +670,10 @@ header .navbar .btn {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.28);
   margin: auto;
+}
+
+.reviews__slider__slider-content__item__text {
+  padding: 0 20px;
 }
 
 .reviews__slider__slider-content__item__text img {
@@ -749,7 +764,12 @@ header .navbar .btn {
 }
 
 .reassurance {
+  margin: 30px 0 0;
   background-color: #edf8fb;
+}
+
+.reassurance .container {
+  padding: 0 40px;
 }
 
 .reassurance__images-row {
@@ -762,7 +782,7 @@ header .navbar .btn {
 }
 
 .reassurance__images-row__image {
-  width: 80px;
+  width: 60px;
 }
 
 .reassurance__images-row__image img {
@@ -771,6 +791,10 @@ header .navbar .btn {
 
 .reassurance__images-row--desktop {
   display: none;
+}
+
+.reassurance h2 {
+  margin: 20px 0 0;
 }
 
 .reassurance h2 span {
