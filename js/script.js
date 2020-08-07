@@ -9,6 +9,7 @@ let recommandationSlider = document.querySelector(".recommandations__slider__sli
 let recommandationIndicatorsActive = recommandationNextBtn;
 let reviewsIndicators = document.querySelectorAll(".reviews__slider-indicators__indicator");
 let reviewsSlider = document.querySelector(".reviews__slider__slider-content");
+let languagesDropdown = document.querySelector(".footer-items__item--languages");
 
 burger.addEventListener("click", function () {
   nav.classList.toggle("open");
@@ -72,3 +73,7 @@ var reviewsSliderInterval = setInterval(() => {
     reviewsCarousel(reviewsIndicators[Array.from(reviewsIndicators).indexOf(reviewActive) + 1]);
   }
 }, 4000);
+
+languagesDropdown.addEventListener("click", function () {
+  languagesDropdown.nextElementSibling.classList.toggle("open");
+});

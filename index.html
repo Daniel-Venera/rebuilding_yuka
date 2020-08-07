@@ -315,34 +315,45 @@
       <footer>
         <div class="logo"><img src="./images/yuka-logo.svg" alt="logo" /></div>
         <div class="download-btns">
-          <div class="download-btn"><img src="./images/app_store_fr.svg" alt="app store download" /></div>
-          <div class="download-btn"><img src="./images/google_play_fr.svg" alt="google play download" /></div>
+          <a href="#" class="download-btn"><img src="./images/app_store_fr.svg" alt="app store download" /></a>
+          <a href="#" class="download-btn"><img src="./images/google_play_fr.svg" alt="google play download" /></a>
         </div>
-        <div class="footer__item">
-          <h4>Projet</h4>
-          <a href="#">Equipe</a><a href="#">Indépendance</a><a href="#">Blog</a>
+        <div class="footer-items">
+          <div class="footer-items__item">
+            <h4>Projet</h4>
+            <a href="#">Equipe</a><a href="#">Indépendance</a><a href="#">Blog</a>
+          </div>
+          <div class="footer-items__item">
+            <h4>Application</h4>
+            <a href="#">Fonctionnalités</a><a href="#">Des questions ?</a>
+          </div>
         </div>
-        <div class="footer__item">
-          <h4>Application</h4>
-          <a href="#">Fonctionnalités</a><a href="#">Des questions ?</a>
+        <div class="footer-items">
+          <div class="footer-items__item">
+            <h4>Liens utiles</h4>
+            <a href="#">Nous contacter</a><a href="#">Presse</a><a href="#">Mentions légales</a>
+          </div>
+          <div class="footer-items__item">
+            <h4 class="footer-items__item--languages">FR <i class="fa fa-caret-down"></i></h4>
+            <ul>
+              <li>FR</li>
+              <li>EN</li>
+              <li>ES</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__item">
-          <h4>Liens utiles</h4>
-          <a href="#">Nous contacter</a><a href="#">Presse</a><a href="#">Mentions légales</a>
-        </div>
-        <div class="footer__item">
-          <h4>Fr <i class="fa fa-caret-down"></i></h4>
-          <ul>
-            <li>FR</li>
-            <li>EN</li>
-            <li>ES</li>
-          </ul>
-        </div>
-        <img src="./images/footer_mobile.svg" alt="footer mobile" class="footer__image--mobile" />
-        <img src="./images/footer_desktop.svg" alt="footer desktop" class="footer__image--desktop" />
-        <img src="./images/footer_tablet.svg" alt="footer tablet" class="footer__image--tablet" />
       </footer>
     </div>
+    <div class="bottom__image-container">
+      <img src="./images/footer_mobile.svg" alt="footer mobile" class="bottom__image-container__image--mobile" />
+    </div>
+    <div class="bottom__image-container bottom__image-container--tablet">
+      <img src="./images/footer_tablet.svg" alt="footer tablet" class="bottom__image--tablet" />
+    </div>
+    <div class="bottom__image-container bottom__image-container--desktop">
+      <img src="./images/footer_desktop.svg" alt="footer desktop" class="bottom__image--desktop" />
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
