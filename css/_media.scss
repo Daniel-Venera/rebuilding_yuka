@@ -1,13 +1,15 @@
 .media__images {
   display: flex;
-  // align-items: center;
-
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   &__image {
     width: 130px;
-    background-position-y: bottom;
-
     img {
       width: 100%;
     }
+  }
+  &__image--square {
+    width: 90px !important;
   }
 }

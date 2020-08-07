@@ -6,11 +6,12 @@
 @import "recommandation";
 @import "reviews";
 @import "media";
+@import "reassurance";
 
 body {
   color: $black;
   font-family: "Open Sans";
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -26,6 +27,7 @@ h3 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {

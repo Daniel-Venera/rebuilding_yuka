@@ -688,7 +688,7 @@ header .navbar .btn {
 
 .reviews__slider__plante-2 {
   width: 75px;
-  right: 60px;
+  right: 20px;
   bottom: -30px;
 }
 
@@ -726,20 +726,72 @@ header .navbar .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .media__images__image {
   width: 130px;
-  background-position-y: bottom;
 }
 
 .media__images__image img {
   width: 100%;
 }
 
+.media__images__image--square {
+  width: 90px !important;
+}
+
+.reassurance {
+  background-color: #edf8fb;
+}
+
+.reassurance__images-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reassurance__images-row__image {
+  width: 80px;
+}
+
+.reassurance__images-row__image img {
+  width: 100%;
+}
+
+.reassurance__images-row--desktop {
+  display: none;
+}
+
+.reassurance h2 span {
+  font-family: "Pacifico";
+  color: #00db5f;
+  position: relative;
+}
+
+.reassurance h2 span img {
+  position: absolute;
+  width: 150px;
+  bottom: -8px;
+  left: -20px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
+  overflow-x: hidden;
 }
 
 h2 {
@@ -756,6 +808,7 @@ h3 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 section {

@@ -1,0 +1,30 @@
+.reassurance {
+  background-color: $lightBlue;
+  &__images-row {
+    display: flex;
+    justify-content: center;
+    &__image {
+      width: 80px;
+      img {
+        width: 100%;
+      }
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+  h2 {
+    span {
+      font-family: "Pacifico";
+      color: $green;
+      position: relative;
+      img {
+        position: absolute;
+        width: 150px;
+        bottom: -8px;
+        left: -20px;
+        transform: rotate(-2deg);
+      }
+    }
+  }
+}
