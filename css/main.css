@@ -168,8 +168,17 @@ header .navbar .btn {
           justify-content: center;
 }
 
+.hero__content__downloads__download, footer .download-btns .download-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero__content__downloads__download img, footer .download-btns .download-btn img {
-  width: 140px;
+  width: 130px;
   background-color: black;
   border-radius: 8px;
   padding: 0 3px;
@@ -222,6 +231,34 @@ header .navbar .btn {
   width: 100%;
 }
 
+@media (min-width: 576px) {
+  .hero__content {
+    max-width: 300px;
+  }
+  .hero__illustrations {
+    margin: 0px 0 200px;
+  }
+  .hero__illustrations__illustration__bg {
+    width: 600px;
+    right: -60px;
+    top: 200px;
+  }
+  .hero__illustrations__illustration__objects {
+    width: 500px;
+    top: 0px;
+    right: 50px;
+  }
+  .hero__illustrations__illustration__telephone {
+    width: 250px;
+    top: -90px;
+    right: 150px;
+  }
+  .hero__illustrations__illustration__carrot {
+    width: 150px;
+    right: 10px;
+  }
+}
+
 .values__value {
   padding: 30px 15px 0px;
   margin: 0 30px;
@@ -251,6 +288,12 @@ header .navbar .btn {
 
 .values__value .left {
   padding-right: 30px;
+}
+
+@media (min-width: 576px) {
+  .values__value {
+    margin: 40px 100px;
+  }
 }
 
 .quality h2 {
@@ -516,6 +559,14 @@ header .navbar .btn {
 
 .recommandations__slider__indicators__indicator--full, .reviews__slider-indicators__indicator--full {
   background-color: #ecebe5;
+}
+
+@media (min-width: 576px) {
+  .recommandations__slider__slider-content__recommandation__arrow {
+    display: block;
+    margin: 0 30px;
+    font-size: 18px;
+  }
 }
 
 .reviews__number-users {
@@ -886,6 +937,13 @@ footer .footer-items__item ul li:hover {
   color: white;
 }
 
+@media (min-width: 576px) {
+  footer .footer-items {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
@@ -938,15 +996,25 @@ section {
   text-align: center;
 }
 
-.bottom__image-container {
+.bottom__image {
+  display: block;
   width: 100vw;
 }
 
-.bottom__image-container img {
+.bottom__image img {
   width: 100%;
 }
 
-.bottom__image-container--tablet, .bottom__image-container--desktop {
+.bottom__image--tablet, .bottom__image--desktop {
   display: none;
+}
+
+@media (min-width: 576px) {
+  .bottom__image--mobile {
+    display: none;
+  }
+  .bottom__image--tablet {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

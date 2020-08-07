@@ -17,6 +17,7 @@ footer {
   .footer-items {
     display: flex;
     margin: 30px 0 30px;
+
     &__item {
       width: 50%;
       h4 {
@@ -58,6 +59,10 @@ footer {
           }
         }
       }
+    }
+    @include tablet {
+      max-width: 400px;
+      margin: 30px auto;
     }
   }
 }

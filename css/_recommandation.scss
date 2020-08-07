@@ -93,4 +93,13 @@
       }
     }
   }
+  @include tablet {
+    &__slider__slider-content__recommandation {
+      &__arrow {
+        display: block;
+        margin: 0 30px;
+        font-size: 18px;
+      }
+    }
+  }
 }

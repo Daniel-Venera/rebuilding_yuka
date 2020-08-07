@@ -16,3 +16,10 @@ $transition: all 0.15s ease;
   box-sizing: border-box;
   list-style: none;
 }
+
+$mobile: 576px;
+@mixin tablet {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}

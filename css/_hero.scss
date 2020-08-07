@@ -1,4 +1,5 @@
 .hero {
+  // background-color: red;
   margin-top: 100px;
   &__content {
     margin-bottom: 100px;
@@ -20,8 +21,10 @@
       display: flex;
       justify-content: center;
       &__download {
+        display: flex;
+        align-items: center;
         img {
-          width: 140px;
+          width: 130px;
           background-color: black;
           border-radius: 8px;
           padding: 0 3px;
@@ -66,6 +69,36 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  @include tablet {
+    &__content {
+      max-width: 300px;
+    }
+    &__illustrations {
+      margin: 0px 0 200px;
+      &__illustration {
+        &__bg {
+          width: 600px;
+          right: -60px;
+          top: 200px;
+        }
+        &__objects {
+          width: 500px;
+          top: 0px;
+          right: 50px;
+        }
+        &__telephone {
+          width: 250px;
+          top: -90px;
+          right: 150px;
+        }
+        &__carrot {
+          width: 150px;
+          right: 10px;
+        }
+      }
     }
   }
 }

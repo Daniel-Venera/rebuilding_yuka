@@ -19,4 +19,9 @@
       padding-right: 30px;
     }
   }
+  @include tablet {
+    &__value {
+      margin: 40px 100px;
+    }
+  }
 }

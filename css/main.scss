@@ -58,7 +58,8 @@ section {
   text-align: center;
 }
 
-.bottom__image-container {
+.bottom__image {
+  display: block;
   width: 100vw;
   img {
     width: 100%;
@@ -66,5 +67,13 @@ section {
   &--tablet,
   &--desktop {
     display: none;
+  }
+  @include tablet {
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: block;
+    }
   }
 }
