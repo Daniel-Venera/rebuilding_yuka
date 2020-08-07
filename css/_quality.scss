@@ -1,14 +1,15 @@
 .quality {
-  h2 {
+  &__title {
     text-align: left;
     span {
       font-family: "Pacifico";
     }
   }
   &__illustration {
+    max-width: 500px;
     height: 240px;
     position: relative;
-    margin: 30px 0px 50px;
+    margin: 30px auto 50px;
     background-color: $bridal;
     padding: 20px 0px 30px;
     border-radius: 8px;
@@ -68,6 +69,35 @@
       }
     }
   }
+  &__content {
+    display: none;
+  }
+  @include desktop {
+    &__title {
+      margin: 0 0 20px;
+    }
+    display: flex;
+    align-items: center;
+    &__title--mobile,
+    &__text--mobile {
+      display: none;
+    }
+    &__illustration {
+      padding: 0 30px;
+      margin: 0;
+    }
+
+    &__content {
+      display: block;
+
+      &--nutrition {
+        padding: 20px 0 30px 30px;
+      }
+      &--cosmetic {
+        padding: 20px 30px 30px 0;
+      }
+    }
+  }
 }
 
 .quality-nutrition {
@@ -77,6 +107,9 @@
     }
     &__items {
       padding-left: 30px;
+      @include desktop {
+        padding-left: 10px;
+      }
       &__item {
         border-radius: 20px 20px 20px 0px;
       }
@@ -87,10 +120,11 @@
 .quality-cosmetic {
   .quality__illustration {
     &__image {
-      width: 90px;
+      width: 110px;
+      margin-top: -70px;
     }
     &__items {
-      padding-right: 30px;
+      padding-right: 10px;
       &__item {
         border-radius: 20px 20px 0px 20px;
       }

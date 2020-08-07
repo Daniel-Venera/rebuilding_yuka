@@ -101,4 +101,31 @@
       }
     }
   }
+  @include desktop {
+    margin: 160px 0 200px;
+    display: flex;
+    &__illustrations {
+      &__illustration {
+        &__bg {
+          width: 800px;
+          right: -700px;
+          top: 300px;
+        }
+        &__objects {
+          width: 500px;
+          right: -300px;
+          top: 100px;
+        }
+        &__telephone {
+          width: 200px;
+          top: 50px;
+          right: -200px;
+        }
+        &__carrot {
+          top: 200px;
+          right: -340px;
+        }
+      }
+    }
+  }
 }

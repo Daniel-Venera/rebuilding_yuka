@@ -17,9 +17,14 @@ $transition: all 0.15s ease;
   list-style: none;
 }
 
-$mobile: 576px;
 @mixin tablet {
-  @media (min-width: $mobile) {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 768px) {
     @content;
   }
 }
