@@ -65,4 +65,23 @@ footer {
       margin: 30px auto;
     }
   }
+  @include tablet {
+    .bottom__image--tablet {
+      display: block;
+    }
+  }
+  @include desktop {
+    .footer__container {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-items {
+      width: 50%;
+      margin: 0;
+      &__item {
+        margin: 0 30px;
+      }
+    }
+  }
 }

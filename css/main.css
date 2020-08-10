@@ -1183,6 +1183,31 @@ footer .footer-items__item ul li:hover {
   }
 }
 
+@media (min-width: 576px) {
+  footer .bottom__image--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer__container {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-items {
+    width: 50%;
+    margin: 0;
+  }
+  footer .footer-items__item {
+    margin: 0 30px;
+  }
+}
+
 body {
   color: #302c2e;
   font-family: "Open Sans";
