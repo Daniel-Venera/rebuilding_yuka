@@ -12,4 +12,12 @@
   &__image--square {
     width: 60px !important;
   }
+  @include desktop {
+    &__image {
+      width: 250px;
+      &--square {
+        width: 100px !important;
+      }
+    }
+  }
 }

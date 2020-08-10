@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   &__number-users {
     display: flex;
     justify-content: center;
@@ -180,7 +181,6 @@
   }
   &__slider-indicators {
     @extend .recommandations__slider__indicators;
-    margin-top: 40px;
     &__indicator {
       @extend .recommandations__slider__indicators__indicator;
     }

@@ -769,6 +769,10 @@ header .navbar .btn {
   }
 }
 
+.reviews {
+  position: relative;
+}
+
 .reviews__number-users {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,10 +988,6 @@ header .navbar .btn {
   left: 300px;
 }
 
-.reviews__slider-indicators {
-  margin-top: 40px;
-}
-
 .media__images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,6 +1012,15 @@ header .navbar .btn {
 
 .media__images__image--square {
   width: 60px !important;
+}
+
+@media (min-width: 768px) {
+  .media__images__image {
+    width: 250px;
+  }
+  .media__images__image--square {
+    width: 100px !important;
+  }
 }
 
 .reassurance {
@@ -1061,6 +1070,36 @@ header .navbar .btn {
   left: -20px;
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
+}
+
+@media (min-width: 768px) {
+  .reassurance__images-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reassurance__images-row__image {
+    width: 150px;
+  }
+  .reassurance__images-row--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .reassurance h2 {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .reassurance h2 span {
+    font-size: 50px;
+  }
+  .reassurance h2 span img {
+    width: 100%;
+  }
 }
 
 footer {
@@ -1169,7 +1208,7 @@ h3 {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 30px;
+    padding: 0 32px;
   }
 }
 

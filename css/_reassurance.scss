@@ -32,4 +32,27 @@
       }
     }
   }
+  @include desktop {
+    &__images-row {
+      justify-content: space-between;
+      &__image {
+        width: 150px;
+      }
+      &--desktop {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      width: 600px;
+      span {
+        font-size: 50px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
