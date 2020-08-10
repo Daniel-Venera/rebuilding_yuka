@@ -135,6 +135,38 @@ header .navbar .btn {
   margin-bottom: 20px;
 }
 
+@media (min-width: 992px) {
+  header .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-nav__menu-burger {
+    display: none;
+  }
+  header .navbar {
+    max-height: 100%;
+  }
+  header .navbar ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar ul li {
+    padding: 0 10px;
+  }
+  header .navbar .btn {
+    display: none;
+  }
+}
+
 .hero {
   margin-top: 100px;
 }
@@ -148,6 +180,13 @@ header .navbar .btn {
   line-height: 35px;
   font-family: "Poppins";
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero__content h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 .hero__content p {
@@ -234,6 +273,7 @@ header .navbar .btn {
 @media (min-width: 576px) {
   .hero__content {
     max-width: 300px;
+    z-index: 2;
   }
   .hero__illustrations {
     margin: 0px 0 200px;
@@ -284,6 +324,32 @@ header .navbar .btn {
   .hero__illustrations__illustration__carrot {
     top: 200px;
     right: -340px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__content {
+    max-width: 50%;
+  }
+  .hero__content p {
+    max-width: 80%;
+  }
+  .hero__illustrations {
+    width: 50%;
+  }
+  .hero__illustrations__illustration__bg {
+    width: 1200px;
+    right: -600px;
+    top: 200px;
+  }
+  .hero__illustrations__illustration__objects {
+    right: 100px;
+  }
+  .hero__illustrations__illustration__telephone {
+    right: 250px;
+  }
+  .hero__illustrations__illustration__carrot {
+    right: 110px;
   }
 }
 
@@ -869,6 +935,7 @@ header .navbar .btn {
 .reviews__slider {
   position: relative;
   margin: 100px 0px 0px;
+  overflow: -moz-hidden-unscrollable;
 }
 
 .reviews__slider__slider-content {
@@ -986,6 +1053,92 @@ header .navbar .btn {
 .reviews__slider__nuage-beige-4 {
   top: -100px;
   left: 300px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    margin: 50px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews h2 {
+    text-align: left;
+  }
+  .reviews__stars {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .reviews__notes {
+    text-align: left;
+  }
+  .reviews__slider {
+    width: 500px;
+    position: static;
+    overflow: hidden;
+    padding: 70px 0;
+    margin: 0 0 0 50px;
+  }
+  .reviews__slider__slider-content__item {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+  .reviews__slider__plante-1, .reviews__slider__plante-3 {
+    display: block;
+  }
+  .reviews__slider__plante-1 {
+    left: 0px;
+    bottom: 100px;
+  }
+  .reviews__slider__plante-2 {
+    width: 100px;
+    left: 300px;
+    bottom: 100px;
+  }
+  .reviews__slider__plante-3 {
+    width: 150px;
+    bottom: 100px;
+    left: 700px;
+  }
+  .reviews__slider__nuage-beige-1, .reviews__slider__nuage-beige-2, .reviews__slider__nuage-beige-3, .reviews__slider__nuage-beige-4 {
+    z-index: -1;
+  }
+  .reviews__slider__nuage-beige-2, .reviews__slider__nuage-beige-3, .reviews__slider__nuage-beige-4 {
+    width: 100px;
+  }
+  .reviews__slider__nuage-beige-1 {
+    bottom: 70px;
+    width: 1000px;
+    right: -250px;
+  }
+  .reviews__slider__nuage-beige-2 {
+    left: 350px;
+    top: 50px;
+  }
+  .reviews__slider__nuage-beige-3 {
+    top: -60px;
+    left: 450px;
+  }
+  .reviews__slider__nuage-beige-4 {
+    top: 0px;
+    left: 600px;
+  }
 }
 
 .media__images {
@@ -1220,6 +1373,12 @@ h2 {
   font-family: "Poppins";
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+
 h3 {
   font-family: "Pacifico";
 }
@@ -1228,7 +1387,6 @@ h3 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {

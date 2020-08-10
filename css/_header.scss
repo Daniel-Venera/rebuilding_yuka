@@ -95,4 +95,29 @@ header {
       margin-bottom: 20px;
     }
   }
+  @include large {
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-nav {
+      &__menu-burger {
+        display: none;
+      }
+    }
+    .navbar {
+      max-height: 100%;
+      ul {
+        padding: 0;
+        display: flex;
+        li {
+          padding: 0 10px;
+        }
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
 }

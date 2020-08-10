@@ -1,5 +1,4 @@
 .hero {
-  // background-color: red;
   margin-top: 100px;
   &__content {
     margin-bottom: 100px;
@@ -8,6 +7,10 @@
       line-height: 35px;
       font-family: "Poppins";
       font-weight: 600;
+      @include desktop {
+        font-size: 40px;
+        line-height: 45px;
+      }
     }
     p {
       font-size: 16px;
@@ -75,6 +78,7 @@
   @include tablet {
     &__content {
       max-width: 300px;
+      z-index: 2;
     }
     &__illustrations {
       margin: 0px 0 200px;
@@ -124,6 +128,33 @@
         &__carrot {
           top: 200px;
           right: -340px;
+        }
+      }
+    }
+  }
+  @include large {
+    &__content {
+      max-width: 50%;
+      p {
+        max-width: 80%;
+      }
+    }
+    &__illustrations {
+      width: 50%;
+      &__illustration {
+        &__bg {
+          width: 1200px;
+          right: -600px;
+          top: 200px;
+        }
+        &__objects {
+          right: 100px;
+        }
+        &__telephone {
+          right: 250px;
+        }
+        &__carrot {
+          right: 110px;
         }
       }
     }
