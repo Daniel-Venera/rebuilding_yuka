@@ -1,5 +1,6 @@
 .quality {
   &__title {
+    line-height: 35px;
     text-align: left;
     span {
       font-family: "Pacifico";
@@ -78,6 +79,7 @@
     }
     display: flex;
     align-items: center;
+    justify-content: center;
     &__title--mobile,
     &__text--mobile {
       display: none;
@@ -98,12 +100,28 @@
       }
     }
   }
+  @include large {
+    &__illustration {
+      width: 50%;
+      background-color: white;
+      &__review {
+        bottom: 110%;
+        right: 60px;
+      }
+    }
+    &__content {
+      width: 50%;
+    }
+  }
 }
 
 .quality-nutrition {
   .quality__illustration {
     &__image {
       width: 150px;
+      @include large {
+        width: 250px;
+      }
     }
     &__items {
       padding-left: 30px;
@@ -118,15 +136,28 @@
 }
 
 .quality-cosmetic {
+  padding-bottom: 0;
   .quality__illustration {
     &__image {
-      width: 110px;
+      width: 90px;
       margin-top: -70px;
+      @include large {
+        width: 150px;
+      }
     }
     &__items {
-      padding-right: 10px;
+      padding-right: 30px;
       &__item {
         border-radius: 20px 20px 0px 20px;
+      }
+    }
+    @include large {
+      flex-direction: row-reverse;
+      &__items {
+        padding: 0 0 0 10px;
+        &__item {
+          border-radius: 20px 20px 20px 0px;
+        }
       }
     }
   }

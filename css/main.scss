@@ -81,4 +81,12 @@ section {
       display: block;
     }
   }
+  @include large {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
+  }
 }

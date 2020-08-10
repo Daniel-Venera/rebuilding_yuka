@@ -182,6 +182,10 @@
   }
   &__slider-indicators {
     @extend .recommandations__slider__indicators;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     &__indicator {
       @extend .recommandations__slider__indicators__indicator;
     }
@@ -268,6 +272,37 @@
       &__nuage-beige-4 {
         top: 0px;
         left: 600px;
+      }
+    }
+  }
+  @include large {
+    &__slider {
+      &__plante-1 {
+        left: 150px;
+        bottom: 80px;
+      }
+      &__plante-2 {
+        bottom: 80px;
+        left: 400px;
+      }
+      &__plante-3 {
+        left: 950px;
+      }
+      &__nuage-beige-1 {
+        width: 1500px;
+        right: -400px;
+        bottom: 10px;
+      }
+      &__nuage-beige-2 {
+        left: 500px;
+      }
+
+      &__nuage-beige-3 {
+        left: 700px;
+      }
+
+      &__nuage-beige-4 {
+        left: 900px;
       }
     }
   }
