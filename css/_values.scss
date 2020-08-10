@@ -27,8 +27,7 @@
     &__container {
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      align-items: flex-start;
       margin: 30px 0 0;
       .values__value {
         margin: 40px 0 0;
@@ -49,9 +48,10 @@
     }
   }
   @include large {
+    margin: 0 0 50px 0;
     &__value {
       width: 33% !important;
-      padding: 0 !important;
+      padding: 0 50px !important;
       margin: 0 !important;
     }
   }

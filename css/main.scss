@@ -19,7 +19,7 @@ h2 {
   text-align: center;
   font-size: 28px;
   font-family: "Poppins";
-  @include desktop {
+  @include large {
     font-size: 38px;
   }
 }

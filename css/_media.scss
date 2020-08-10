@@ -1,3 +1,11 @@
+.media {
+  @include tablet {
+    h2 {
+      margin: 0 0 24px 0;
+    }
+  }
+}
+
 .media__images {
   display: flex;
   align-items: center;
@@ -12,6 +20,10 @@
   &__image--square {
     width: 60px !important;
   }
+  @include tablet {
+    margin: 24px 0 0 0;
+  }
+
   @include desktop {
     &__image {
       width: 250px;

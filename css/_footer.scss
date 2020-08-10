@@ -66,6 +66,8 @@ footer {
     }
   }
   @include tablet {
+    padding: 0;
+    margin: 64px 0 0 0;
     .bottom__image--tablet {
       display: block;
     }
@@ -86,7 +88,7 @@ footer {
   }
   @include large {
     display: flex;
-    margin: 30px 0;
+    margin: 80px 0 30px 0;
     .footer-btns {
       .logo {
         margin: 0;

@@ -186,6 +186,7 @@
     bottom: -50px;
     left: 50%;
     transform: translate(-50%, -50%);
+
     &__indicator {
       @extend .recommandations__slider__indicators__indicator;
     }
@@ -193,11 +194,8 @@
       @extend .recommandations__slider__indicators__indicator--full;
     }
   }
+
   @include desktop {
-    margin: 50px 0 0;
-    display: flex;
-    position: relative;
-    justify-content: center;
     h2 {
       text-align: left;
     }
@@ -207,6 +205,14 @@
     &__notes {
       text-align: left;
     }
+    &__slider-indicators {
+      bottom: 100px;
+      left: 68%;
+    }
+    margin: 50px 0 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
 
     &__slider {
       width: 500px;
