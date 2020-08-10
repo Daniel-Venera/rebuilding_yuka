@@ -63,12 +63,13 @@
             img {
               width: 100%;
             }
-          }
-          &__shadow--bad {
-            rotate: (5deg);
-          }
-          &__shadow--good {
-            rotate: (-5deg);
+            &--bad {
+              transform: rotate(5deg);
+            }
+
+            &--good {
+              transform: rotate(-5deg);
+            }
           }
         }
         &__arrow {
@@ -100,6 +101,78 @@
         margin: 0 30px;
         font-size: 18px;
       }
+    }
+  }
+
+  &--desktop {
+    display: none;
+    background: url("../images/bg-wave-blue-light.svg") no-repeat center;
+    background-size: cover;
+    h2 {
+      margin: 30px 0;
+    }
+    &__recommandation {
+      width: 80%;
+      margin: 0 auto 80px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &__product {
+        @extend .recommandations__slider__slider-content__recommandation__product;
+        width: 250px;
+        border-radius: 8px;
+        &__image {
+          @extend .recommandations__slider__slider-content__recommandation__product__image;
+          width: 150px;
+          img {
+            width: 100%;
+          }
+          &--cosmetic {
+            width: 100px;
+          }
+        }
+        &__content {
+          color: $grey;
+          font-weight: 600;
+          div {
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+        &__check {
+          width: 40px;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+        }
+        &__shadow {
+          width: 80%;
+
+          position: absolute;
+          bottom: -35px;
+          img {
+            width: 100%;
+          }
+          &--bad {
+            transform: rotate(5deg);
+          }
+          &--good {
+            transform: rotate(-5deg);
+          }
+        }
+      }
+      &__arrow {
+        width: 30px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @include desktop {
+    display: none;
+    &--desktop {
+      display: block;
     }
   }
 }

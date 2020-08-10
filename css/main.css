@@ -557,7 +557,7 @@ header .navbar .btn {
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.28);
 }
 
-.recommandations__slider__slider-content__recommandation__product {
+.recommandations__slider__slider-content__recommandation__product, .recommandations--desktop__recommandation__product {
   margin: 0px 5px;
   padding: 10px;
   position: relative;
@@ -576,11 +576,11 @@ header .navbar .btn {
   width: 100px;
 }
 
-.recommandations__slider__slider-content__recommandation__product__image {
+.recommandations__slider__slider-content__recommandation__product__image, .recommandations--desktop__recommandation__product__image {
   width: 73px;
 }
 
-.recommandations__slider__slider-content__recommandation__product__image img {
+.recommandations__slider__slider-content__recommandation__product__image img, .recommandations--desktop__recommandation__product__image img {
   width: 100%;
 }
 
@@ -610,12 +610,12 @@ header .navbar .btn {
   right: -10px;
 }
 
-.recommandations__slider__slider-content__recommandation__product:first-child {
+.recommandations__slider__slider-content__recommandation__product:first-child, .recommandations--desktop__recommandation__product:first-child {
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
 }
 
-.recommandations__slider__slider-content__recommandation__product:nth-child(3) {
+.recommandations__slider__slider-content__recommandation__product:nth-child(3), .recommandations--desktop__recommandation__product:nth-child(3) {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
 }
@@ -631,11 +631,13 @@ header .navbar .btn {
 }
 
 .recommandations__slider__slider-content__recommandation__product__shadow--bad {
-  rotate: 5deg;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 .recommandations__slider__slider-content__recommandation__product__shadow--good {
-  rotate: -5deg;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 .recommandations__slider__slider-content__recommandation__arrow {
@@ -670,6 +672,100 @@ header .navbar .btn {
     display: block;
     margin: 0 30px;
     font-size: 18px;
+  }
+}
+
+.recommandations--desktop {
+  display: none;
+  background: url("../images/bg-wave-blue-light.svg") no-repeat center;
+  background-size: cover;
+}
+
+.recommandations--desktop h2 {
+  margin: 30px 0;
+}
+
+.recommandations--desktop__recommandation {
+  width: 80%;
+  margin: 0 auto 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.recommandations--desktop__recommandation__product {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.recommandations--desktop__recommandation__product__image {
+  width: 150px;
+}
+
+.recommandations--desktop__recommandation__product__image img {
+  width: 100%;
+}
+
+.recommandations--desktop__recommandation__product__image--cosmetic {
+  width: 100px;
+}
+
+.recommandations--desktop__recommandation__product__content {
+  color: #827e79;
+  font-weight: 600;
+}
+
+.recommandations--desktop__recommandation__product__content div {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.recommandations--desktop__recommandation__product__check {
+  width: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.recommandations--desktop__recommandation__product__shadow {
+  width: 80%;
+  position: absolute;
+  bottom: -35px;
+}
+
+.recommandations--desktop__recommandation__product__shadow img {
+  width: 100%;
+}
+
+.recommandations--desktop__recommandation__product__shadow--bad {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.recommandations--desktop__recommandation__product__shadow--good {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.recommandations--desktop__recommandation__arrow {
+  width: 30px;
+}
+
+.recommandations--desktop__recommandation__arrow img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .recommandations {
+    display: none;
+  }
+  .recommandations--desktop {
+    display: block;
   }
 }
 
