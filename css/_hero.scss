@@ -133,6 +133,7 @@
     }
   }
   @include large {
+    margin: 200px 0 100px 0;
     &__content {
       max-width: 50%;
       p {

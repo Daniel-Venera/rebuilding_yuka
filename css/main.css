@@ -328,6 +328,9 @@ header .navbar .btn {
 }
 
 @media (min-width: 992px) {
+  .hero {
+    margin: 200px 0 100px 0;
+  }
   .hero__content {
     max-width: 50%;
   }
@@ -421,6 +424,14 @@ header .navbar .btn {
   .values__container .values__value__title img {
     display: block;
     margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .values__value {
+    width: 33% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
